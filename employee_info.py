@@ -22,7 +22,6 @@ def calculate_average_salary():
     total = 0
     average = 0
 
-    #add your implementation to calculate here
     for item in employee_data:
         total += item['salary']
         average +=1
@@ -32,8 +31,10 @@ def calculate_average_salary():
 def get_employees_by_dept(department):
     result = []
 
-    # Add your implementation from here
-
+    # check for age limits and append the item to result
+    for item in employee_data:
+        if item["department"] == department:
+            result.append(item)
 
     return result
 
